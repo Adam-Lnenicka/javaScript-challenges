@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Challenges</title>
+        <link rel="stylesheet" href="jsgames.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,800;0,900;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <ul class ='menu'>
+                <li><a href='#coconut-calorie-calculator'>Hidden Ball Challenge</a></li>
+                <li><a href='#hidden-ball-challenge'>Calorie Calculator</a></li>
+                <li><a href='#secret-code'>Maze runner</a></li>
+                <li><a href='#maze-runner'>Secret Message Calculator</a></li>
+            </ul>
+        
+        </header>
+        <div class ='banner'>
+            <h1>JavaScript Challenges</h1>
+        </div>
+        <!--hidden ball -->
+        <section class = 'hidden-ball-challenge' id = 'hidden-ball-challenge'>
+            <h2>Hidden Ball Challenge</h2>
+            <h3>There are three hats. Only one of them has a ball hidden underneath. <span>Test your luck and select one of the hats to find the ball.</span></h3>
+            <div class = 'wizard-items' id ='wizard-items'>
+                <div class ='item'>
+                    <div>
+                        <i class="fas fa-hat-wizard fa-5x hat" ></i>
+                        <i class="fas fa-baseball-ball ball fa-2x" id ='ball1'></i>
+                    </div>
+                    <button class ='btn button' id ='btn1'>Select first hat!</button>
+                </div>
+                <div class ='item'>
+                    <div>
+                        <i class="fas fa-hat-wizard fa-5x hat" ></i>
+                        <i class="fas fa-baseball-ball ball fa-2x" id ='ball2'></i>
+                    </div>
+                    <button class ='btn button' id ='btn2'>Select second hat!</button>
+                </div>
+                <div class ='item'>
+                    <div>
+                        <i class="fas fa-hat-wizard fa-5x hat" ></i>
+                        <i class="fas fa-baseball-ball ball fa-2x" id ='ball3'></i>
+                    </div>
+                    <button class ='btn button' id ='btn3'>Select third hat!</button>
+                </div>
+            </div>
+            <div class ='reset-section'></div>
+            <h3 id='reveal'></h3>
+            
+                <button class='btn button reset' id ='reset'>reset</button>      
+            </div>
+        </section>
+        <!--calorie calculator -->
+        <section id="coconut-calorie-calculator">
+            <h2>Calorie Calculator</h2>
+            <div class="container">
+                <div>
+                    <div class='calorieIntake'>                 
+                        <div>
+                            <label for ='weight'>Weight</label>
+                            <input type="number" id="weight">
+                        </div>
+                        <div>
+                            <label for ='age'>Age</label>
+                            <input type="number" id="age">
+                        </div>
+                        <div>
+                            <label for ='exerciseHours'>How many hours per week do you exercise?</label>
+                            <input type="number" id="exerciseHours">
+                        </div>
+                    </div>    
+                    <button class ='button' id="btn">Convert</button>
+                    <div>
+                        <h3>Calories intake per day to maintain weight</h3>
+                        <h4 id="result2"></h4>
+                    </div>
+                </div>            
+            </section>
+        <!--Maze Runner-->
+        <section class= 'maze-runner' id = 'maze-runner'>
+            <h2>The Maze Runner</h2>
+            <h3>Using the arrow keys navigate your way through the maze!</h3>
+            <div class="grid"></div>
+        </section>
+        <!--Secret Code-->
+        <section class = 'secret-code'>
+                <h2 class="title">
+                    Secret Code Generator: Write a Secret Message!
+                </h2>
+                <div class ='container'>
+                    <h3>Principles of the secret code:</h3>
+                        <ol>
+                            <li>All vowels have a number assigned to them:
+                                <br>
+                                    (a = 1; e = 2; i = 3; o = 4; u = 5; 'y' is not considered a vowel)</li>
+                            <li>All characters are written in reverse order</li>
+                            <li>The code is written in capital letters</li>
+                        </ol>            
+                    <div class ='inner-container'>
+                        <p><strong>Your friend just wrote you!
+                        <br>
+                        Hello, how are you?</strong>
+                        <br>
+                        <em>54y 2r1 w4h 4ll2h</em></p>
+                        <h3>Respond in a secret code!</h3>
+                        <div>
+                            <h3>Your text</h3>
+                            <input type="text" id="firstSentence">
+                        </div>
+                        <button class ='button'id="btn4">Generate secret message</button>
+                        <div>
+                            <h3>Secret message</h3>
+                            <h4 id="result3"></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <footer>
+            <p>JavaScript Challenges 2020</p>
+        </footer>
+        <script src="hidden-ball.js"></script>
+        <script src="calorie-calculattor.js"></script>
+        <script src="maze-runner.js"></script>
+        <script src="secret-code.js"></script>
+        <script src="https://kit.fontawesome.com/0f3bc4dbc5.js" crossorigin="anonymous"></script> 
+    </body>
+</html>

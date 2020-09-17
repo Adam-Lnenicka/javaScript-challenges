@@ -1,0 +1,217 @@
+/* colors */
+
+$darkBlue: #080f5b;
+$lighterBlue: #00008B;
+$lightYellow: #f4e4c1;
+$Yellow:#e4c580;
+$hilightColor: #15db95;
+
+
+body{
+
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}  
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+    color: $darkBlue
+
+}
+
+.menu{
+    background-color: $lighterBlue;
+    font-display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    margin:0;
+}
+
+.menu li{
+    list-style: none;
+    margin: 0em 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: $hilightColor;
+    }
+}
+
+.banner{
+    background-color: $darkBlue;
+    color:#15db95;
+    height: 45vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 2em 0em;
+    background-color: $lighterBlue;
+    border: none;
+    &:hover{
+        transform: scale(1.1)
+    }
+}
+/*coconuts*/
+.calorieIntake{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*wizard hats with balls*/
+.hidden-ball-challenge{
+    h3{
+        margin-left: 5rem;
+    }
+    span{
+        text-transform: uppercase;
+    }
+    .reset{
+        margin-left: 5rem;
+        padding: 1em 3em;
+        margin-top: 0
+    }
+}
+.reset-section{
+    display:flex
+}
+
+.wizard-items{
+    display: flex;
+    justify-content: space-around;
+    height: 15rem;
+    align-items: center;
+    background-color:  #f4e4c1;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 16rem;
+    align-items: center
+}
+
+.hat{
+    columns: $darkBlue;
+}
+
+.reveal{
+    display: flex;
+    justify-content: center;
+}
+
+
+.ball{
+    color: yellow
+}
+
+#ball1{
+    display: none;
+}
+
+#ball2{
+    display: none;
+}
+
+#ball3{
+    display: none;
+}
+
+
+/*maze css*/
+.maze-runner{
+    h3{
+        margin-left: 5rem;
+    }
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    background-color: #f4e4c1;
+    margin-left: 5rem; 
+}
+
+.grid div {
+    width: 10px;
+    height: 10px;   
+}
+
+.dot {
+    background-color: #f4e4c1;
+
+}
+
+.wall {
+    background-color: #5c8f3b;
+}
+
+
+
+.movingDot {
+    background-color: $darkBlue;
+    border-radius: 5px;
+
+}
+
+.start-finish{
+    background-color: #ef666d;
+}
+
+/*secret code*/
+.container{
+    background-color: #f4e4c1;
+    padding: 4em;
+    
+}
+
+.inner-container{
+    background-color: #e4c580;
+    padding: 3em;
+    border-radius: 0.5em;
+}
+#firstSentence{
+    width: 45%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;    
+}
+footer{
+    color: white;
+    text-align: center;
+    background-color: $darkBlue;
+    font-weight: 800;
+    margin: 0;
+    padding: 3em;
+}
